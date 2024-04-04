@@ -8,14 +8,112 @@
 		<style>
 			/* Schrijf hier gewoon je CSS voor dit component */
 
+			.carousel-container {
+  				width: 100%;
+  				margin: 0 auto;
+  				overflow: hidden;
+  				position: relative;
+			}
+
+			.carousel-slide {
+  				display: flex; 
+ 	 			transition: transform 0.5s ease;
+			}
+
+			.carousel-item {
+  				width: 100%;
+				height: 500px;
+  				flex: 0 0 auto;
+  				text-align: center; 
+  				padding: 20px;
+				font-size: 50px;
+			}
+
+			.button {
+  				cursor: pointer;
+  				padding: 10px 20px;
+  				margin: 10px;
+  				background-color: #007bff;
+  				color: white;
+  				border: none;
+  				border-radius: 5px;
+			}
+
+			.button:hover {
+  				background-color: #0056b3;
+			}
+
+			.slide1 {
+				background-color: aqua;
+			}
+
+			.slide2 {
+				background-color: bisque;
+			}
+
+			.slide3 {
+				background-color: blueviolet;
+			}
+
+			.slide4 {
+				background-color: cadetblue;
+			}
+
+			.slide5 {
+				background-color: chocolate;
+			}
+
+			.slide6 {
+				background-color: darkgreen;
+			}
+
 			/* Hint: welk layout model is handig om content naast elkaar te zetten? */
 		</style>
 		<script type="module">
+
 			/* Schrijf hier eventueel je client-side JavaScript */
+
+			document.addEventListener('DOMContentLoaded', function () {
+					const slide = document.querySelector('.carousel-slide');
+					let counter = 0;
+					const slidesCount = document.querySelectorAll('.carousel-item').length;
+
+					document.getElementById('prevBtn').addEventListener('click', function () {
+						if (counter > 0) {
+							counter--;
+						}
+						slide.style.transform = `translateX(-${counter * 100}%)`;
+					});
+
+					document.getElementById('nextBtn').addEventListener('click', function () {
+						if (counter < slidesCount - 1) {
+							counter++;
+						}
+						slide.style.transform = `translateX(-${counter * 100}%)`;
+					});
+				});
+
 		</script>
 	</head>
 	<body>
 		<h1>Carrousel</h1>
+
+		<div class="carousel-container">
+			<div class="carousel-slide">
+				<div class="carousel-item slide1">“Websites leren bouwen, én praktijkervaring opdoen?”</div>
+				<div class="carousel-item slide2">“FDND is de enige HBO-opleiding voor Frontend Development in Nederland, in
+					twee jaar stomen wij jou klaar voor het werkveld”</div>
+				<div class="carousel-item slide3">“Je werkt bij ons aan échte projecten voor échte opdrachtgevers”</div>
+				<div class="carousel-item slide4">“In het studiomodel werken studenten onder begeleiding van coaches en experts
+					uit het vakgebied aan praktijkgerichte opdrachten”</div>
+				<div class="carousel-item slide5">“Bij FDND leer je websites bouwen en andere belangrijke skills die jij in de
+					praktijk toe kan passen”</div>
+				<div class="carousel-item slide6">“Een Associate degree-opleiding is een tweejarige hbo-opleiding op niveau 5”
+				</div>
+			</div>
+			<button id="prevBtn" class="button">Previous</button>
+			<button id="nextBtn" class="button">Next</button>
+		</div>
 
 		<!-- Content
 
@@ -33,11 +131,11 @@
 
 		-->
 
-		<details open>
+		<!-- <details open>
 			<summary>Demo video</summary>
 			<video src="assets/carrousel.mp4" width="1298" height="469" controls muted autoplay loop>
 				<a href="assets/carrousel.mp4">assets/carrousel.mp4</a>
 			</video>
-		</details>
+		</details> -->\
 	</body>
 </html>
