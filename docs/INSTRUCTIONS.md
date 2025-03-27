@@ -90,6 +90,7 @@ Strategiën voor verschillende “features”:
 - [@supports in CSS @ MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
 - [Implementing feature detection @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection)
 - [Progressive Enhancement @ MDN](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement)
+- [Progressive Enhancement Resources](https://github.com/voorhoede/progressive-enhancement-resources)
 
 
 ### Inspiratie
