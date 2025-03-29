@@ -18,7 +18,8 @@ Het doel van deze opdracht is te leren hoe je een website kan ontwerpen en maken
 
 ### Progressive enhancement
 
-Progressive Enhancement is een _(coding) strategie_, waarmee je er voor kunt zorgen dat je website het altijd doet, voor iedereen:
+Progressive Enhancement is een _(coding) strategie_, waarmee je er voor kunt zorgen dat je website het altijd doet, voor iedereen.
+Bouw een website op in lagen, zodat een browser kan 'terug vallen' naar een werkende versie als een CSS- of JS-techniek niet wordt ondersteund: 
 
 1) Bepaal eerst de _core functionality_ van wat je gaat maken
 2) Bouw die functionaliteit met de _simpelste techniek_ (meestal HTML, met een klein beetje Mobile First CSS voor de huisstijl)
