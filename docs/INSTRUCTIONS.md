@@ -41,7 +41,7 @@ In de HTML van elk component staan wat hints en content die je nodig hebt.
 
 ### UI componenten
 
-Maak minimaal 3 van onderstaande user interface componenten: 
+Maak ~~minimaal 3~~ in sprint 9, 10 en 11 alle user interface componenten: 
 
 - [Veelgestelde vragen](https://fdnd-task.github.io/progressive-enhancement/faq.html)
 - [Switch control](https://fdnd-task.github.io/progressive-enhancement/switch.html)
