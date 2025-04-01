@@ -2,7 +2,7 @@
 
 # Progressive Enhancement
 
-Een oefening in het ontwerpen en bouwen van websites volgens het principe van Progressive Enhancement
+Een oefening in het ontwerpen en bouwen van UI components volgens het principe van Progressive Enhancement
 
 In het college _S09W2-01-Progressive-Enhancement_ wordt behandeld wat Progressive Enhancement is, en wordt deze deeltaak uitgelegd.
 
