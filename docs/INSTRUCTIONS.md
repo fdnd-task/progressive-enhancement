@@ -19,16 +19,16 @@ Het doel van deze opdracht is te leren hoe je een website kan ontwerpen en maken
 ### Progressive enhancement
 
 Progressive Enhancement is een _strategie voor ontwerpen en coderen_, waarmee je er voor kunt zorgen dat je website het altijd doet, voor iedereen.
-Bouw een website op in lagen, zodat een browser kan 'terug vallen' naar een werkende versie als een CSS- of JS-techniek niet wordt ondersteund: 
+Bouw een website op in lagen, zodat een browser kan 'terugvallen' naar een werkende versie als een CSS- of JS-techniek niet wordt ondersteund: 
 
+<!--
 1) Bepaal eerst de _core functionality_ van wat je gaat maken
 2) Bouw die functionaliteit met de _simpelste techniek_ (meestal HTML, met een klein beetje One Column Mobile First CSS voor de huisstijl)
 3) Voeg daarna _extra enhancements_ toe met CSS en client-side JS, om de User Experience te verbeteren (de leukste stap!)
-
-![image](https://github.com/fdnd-task/progressive-enhancement/assets/1391509/f6d0490b-6748-4fc8-8a63-d33d2f2d0b68)
-<br><small>_The skateboard may be a little slower, but it doesn’t stop the user getting to where they want to go. So, if the user’s browser doesn’t support JavaScript or modern CSS then it doesn’t break_ - Andy Bell
-</small>
-
+-->
+1) Bouw de functionaliteit robuust, met de simpelste techniek​ (HTML en Server-Side Rendering)​
+2) Voeg Mobile First CSS voor de huisstijl toe​
+3) Enhance de functionaliteit _geleidelijk_ voor een betere User Experience​ (De leukste stap. Moderne CSS en client-side JS.)​
 
 
 ## Aanpak
@@ -65,8 +65,8 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 
 ### Aanpak (per component)
 
-1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component is, wat de _core functionaliteit_ is en wat de enhancement(s) is/zijn. Gebruik de demo video om een idee te krijgen. Schets het component en de interactie.
-2. Onderzoek welke HTML je voor de _core functionaliteit_ nodig hebt, maak hiervan een breakdownschets, en codeer je HTML met minimale CSS voor de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
+1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component _eigenlijk_ is. Gebruik de demo video om een idee te krijgen, maar laat je niet afleiden door hoe het er uit ziet. Schets het component en de interactie.
+2. Onderzoek welke HTML je nodig hebt om dit component _robuust_ neer te zetten, maak hiervan een breakdownschets, en codeer je HTML met minimale CSS voor de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
 3. Voeg eventueel meer CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices.
 
 <!--
@@ -107,19 +107,7 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 
 Deze opdracht is done als:
 
-<!--
-UI Events DOD:
-“Je hebt de 11 basis interacties stap voor stap voltooid, en je voortgang, breakdown schetsen en testresultaten zijn in issues opgenomen.”
-
-Nieuwe DOD's:
 - [ ] Je hebt alle user interface componenten stap voor stap voltooid, en je voortgang, analyse, gesignaleerde knelpunten, schetsen en testresultaten in issues opgenomen
-- [ ] Je hebt per component eerst de core functionaliteit en vervolgens de enhancement(s) beschreven in de analyse van je issue
+- [ ] Je hebt per component de functionaliteit beschreven en robuuste HTML geschreven
 - [ ] Je hebt per component één of meerdere strategieën voor Progressive Enhancement gecombineerd en deze uitgelegd in je issue
 - [ ] Je hebt per component getest op meerdere browsers en devices en je kunt verschillen verklaren en begrijpelijk overbrengen in je issue
--->
-
-- [ ] Je hebt minstens drie user interface componenten stap voor stap in een _issue_ gedocumenteerd en uitgewerkt in code
-- [ ] De breakdownschetsen zijn opgenomen in het issue
-- [ ] Bij elke schets staat een korte uitleg van de code
-- [ ] Je werk is te bekijken via GitHub Pages
-
