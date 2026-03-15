@@ -67,19 +67,22 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 
 1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component _eigenlijk_ is. Gebruik de demo video om een idee te krijgen, maar laat je niet afleiden door hoe het er uit ziet. Schets het component en de interactie.
 2. Onderzoek welke HTML je nodig hebt om dit component _robuust_ neer te zetten, maak hiervan een breakdownschets, en codeer je HTML met minimale CSS voor de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
-3. Voeg eventueel meer CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices.
+3. Voeg eventueel geleidelijk meer CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices.
 
-<!--
-### Strategiën voor verschillende enhancements
+### Strategiën en voorbeelden voor verschillende enhancements (TODO: Lijst nog uitwerken en verduidelijken)
 
 - Met @supports (background-clip: text)
-- Feature detection in JS (<button hidden> + feature detect + button.hidden=false)
-- Door HTML goed op te bouwen (<video src=video.mp4><a href=video.mp4>Download video</a></video>)
+- Door de cascade goed te gebruiken
+- Feature detection in JS (`<button hidden>` + feature detect + button.hidden=false)
+- Door HTML goed op te bouwen (`<video src=video.mp4><a href=video.mp4>Download video</a></video>`)
+- Door nieuwe features in HTML (responsive images volgorde/opt-in)
 - Door ok te zijn met verschillen in browsers (zoals high def color -> op een Kindle sowieso geen kleur)
 - Met een polyfill (invoker commands)
 - Door een goede one column layout (nesting, custom props?)
-- Door “progressive enhancement”
--->
+- Door “progressive enhancement” (duh)
+- Media queries / user preference media features
+- Container queries
+- View Transitions
 
 <!--
 #### Voor Sprint 11
