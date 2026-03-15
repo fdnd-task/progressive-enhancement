@@ -103,7 +103,7 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 - [Progressive Enhancement and Data Visualizations](https://css-tricks.com/progressive-enhancement-data-visualizations/)
 
 
-## Criteria
+## Definitions of Done
 
 Deze opdracht is done als:
 
