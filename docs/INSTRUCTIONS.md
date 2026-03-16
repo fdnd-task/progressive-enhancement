@@ -27,7 +27,7 @@ Bouw een website op in lagen, zodat een browser kan 'terugvallen' naar een werke
 3) Voeg daarna _extra enhancements_ toe met CSS en client-side JS, om de User Experience te verbeteren (de leukste stap!)
 -->
 1) Bouw de functionaliteit robuust, met de simpelste techniek​ (HTML en Server-Side Rendering)​
-2) Voeg Mobile First CSS voor de huisstijl toe​
+2) Voeg basic CSS voor de huisstijl toe​
 3) Enhance de functionaliteit _geleidelijk_ voor een betere User Experience​ (De leukste stap. Moderne CSS en client-side JS.)​
 
 
