@@ -164,19 +164,12 @@ Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills
 
 ### Bronnen
 
+- [Can I Use](https://caniuse.com/)
+- [Baseline (compatibility) @ MDN](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility)
 - [@supports in CSS @ MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
 - [Implementing feature detection @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection)
 - [Progressive Enhancement @ MDN](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement)
 - [Progressive Enhancement Resources](https://github.com/voorhoede/progressive-enhancement-resources)
-
-
-### Inspiratie
-
-- [Styling & Customizing File Inputs the Smart Way](https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/)
-- [It All Starts with a Humble `<textarea>`](https://24ways.org/2019/it-all-starts-with-a-humble-textarea/)
-- [Making a Better Custom Select Element](https://24ways.org/2019/making-a-better-custom-select-element/)
-- [Progressive Enhancement and Data Visualizations](https://css-tricks.com/progressive-enhancement-data-visualizations/)
-
 
 ## Definitions of Done
 
