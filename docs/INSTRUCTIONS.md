@@ -86,7 +86,7 @@ body {
 
 Tip: sommige browsers en apparaten kunnen überhaupt geen kleur laten zien (denk aan e-readers), dus hou ook hier rekening mee.
 
-#### Feature detection in CSS: @supports
+#### Feature detection in CSS: `@supports`
 
 Test of een browser een bepaalde feature ondersteunt, voordat je ook _gerelateerde_ properties verandert. In dit voorbeeld maak je bijvoorbeeld _alleen_ de kleur transparant als de browser _ook_ `background-clip` ondersteunt.
 
@@ -98,6 +98,29 @@ h1 {
     color: transparent;
     background: linear-gradient(#66E5BF, #A675F5);
     background-clip: text;
+  }
+}
+```
+
+#### Media Queries in CSS: `@media`
+
+Met media queries maak je een layout complexer, met bijvoorbeeld meerdere kolommen of animaties:
+
+```css
+body {
+  color: #A675F5;
+  @media (min-width: 40em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation: --reveal 3s ease-in forwards;
+  }
+}
+@keyframes --reveal {
+  to {
+    opacity: 1;
   }
 }
 ```
