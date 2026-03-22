@@ -66,7 +66,7 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 ### Aanpak (per component)
 
 1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component _eigenlijk_ is. Maak een breakdownschets van de interactie, en bedenk met welke _robuuste HTML_ dit kan. Gebruik de demo video om een idee te krijgen, maar laat je niet afleiden door hoe het er uit ziet.
-2. Onderzoek welke Baseline CSS je nodig hebt om dit component neer te zetten, en codeer je HTML met minimale CSS voor de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
+2. Onderzoek welke Baseline CSS je nodig hebt om dit component te stylen in de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
 3. Voeg eventueel geleidelijk meer moderne CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices; het is bij deze stap prima als niet elke browser dit precies hetzelfde doet.
 
 ### Strategiën en voorbeelden voor verschillende enhancements
@@ -75,7 +75,7 @@ Stap 3, de _enhancements_, doe je niet op slechts één manier. Je kunt hiervoor
 
 #### Feature detection in CSS: @supports
 
-Test of een browser een bepaalde feature ondersteunt, voordat je ook gerelateerde properties verandert.
+Test of een browser een bepaalde feature ondersteunt, voordat je ook _gerelateerde_ properties verandert.
 
 ```css
 h1 {
