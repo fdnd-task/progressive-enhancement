@@ -71,10 +71,74 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 
 ### Strategiën en voorbeelden voor verschillende enhancements
 
-- Met @supports (background-clip: text)
-- Door de cascade goed te gebruiken
-- Feature detection in JS (`<button hidden>` + feature detect + button.hidden=false)
-- Door HTML goed op te bouwen (`<video src=video.mp4><a href=video.mp4>Download video</a></video>`)
+Stap 3, de _enhancements_, doe je niet op slechts één manier. Je kunt hiervoor verschillende code strategieën gebruiken. Hieronder staan een aantal van deze manieren, met een voorbeeld. Per component heb je waarschijnlijk (een combinatie van) een aantal manieren nodig.
+
+#### Feature detection in CSS: @supports
+
+Test of een browser een bepaalde feature ondersteunt, voordat je ook gerelateerde properties verandert.
+
+```css
+h1 {
+  color: #A675F5;
+
+  @supports (background-clip: text) {
+    color: transparent;
+    background: linear-gradient(#66E5BF, #A675F5);
+    background-clip: text;
+  }
+}
+```
+
+#### De Cascade
+
+Browsers negeren CSS values die ze niet kennen. Maak hier slim gebruik van als je bijvoorbeeld nieuwere features wilt gebruiken.
+
+```css
+body {
+  color: red;
+  color: color(display-p3 1 0 0);
+}
+```
+
+#### Feature detection in JS
+
+In JavaScript kun je controleren of een bepaalde feature ondersteund wordt, voordat je deze gebruikt. Browsers die deze feature niet ondersteunen, zorgen dan niet voor een error.
+
+```javascript
+if (document.startViewTransition) {
+  document.startViewTransition(function() {
+    veranderDeLayout()
+  })
+} else {
+  veranderDeLayout()
+}
+```
+
+#### Verberg UI waar je JavaScript voor nodig hebt, en toon deze met JavaScript
+
+Als je client-side JavaScript voor functionaliteit gebruikt, en je hebt daar bepaalde UI elementen voor nodig, verberg deze dan eerst. Met JavaScript kun je ze tonen. Mocht er iets mis gaan, dan heeft je bezoeker in ieder geval geen knoppen die niks doen.
+
+```html
+<button id="knop" hidden>Toon volgende foto</button>
+```
+
+```javascript
+let btn = document.getElementById('knop')
+btn.addEventListener('click', function() {
+  // Hier komt complexere code
+});
+// Toon de knop met JavaScript
+btn.hidden = false
+```
+
+Tip: combineer _JS feature detection_ met dit patroon.
+
+#### Door HTML goed op te bouwen (`<video src=video.mp4><a href=video.mp4>Download video</a></video>`)
+
+TODO
+
+#### Overige
+
 - Door nieuwe features in HTML (responsive images volgorde/opt-in)
 - Door ok te zijn met verschillen in browsers (zoals high def color -> op een Kindle sowieso geen kleur)
 - Met een polyfill (invoker commands)
