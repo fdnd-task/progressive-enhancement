@@ -12,11 +12,11 @@ In het college _S09W2-01-Progressive-Enhancement_ wordt behandeld wat Progressiv
 
 Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruiken. [Het web is voor iedereen](https://www.w3.org/mission/). 
 
-Maar het web is geen gecontroleerde (programmeer) omgeving. Je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, type van de browser, versie van de browser, combinatie van browser extensies, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, en kwaliteit van het netwerk. En er zijn mensen, allemaal verschillende mensen...
+Maar het web is geen gecontroleerde (programmeer) omgeving. Je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, type van de browser engine, versie van de browser, combinatie van browser extensies, grootte van het apparaat, manier van interactie, verschillende operating systems, kwaliteit van de hardware, en kwaliteit van het netwerk. En er zijn mensen, allemaal verschillende mensen...
 
 Het doel van deze opdracht is te leren hoe je een website kan ontwerpen en maken met behulp van _Progressive Enhancement_ zodat het voor iedereen _toegankelijk_ is.
 
-### Progressive enhancement
+### Progressive Enhancement
 
 Progressive Enhancement is een _strategie voor ontwerpen en coderen_, waarmee je er voor kunt zorgen dat je website het altijd doet, voor iedereen.
 Bouw een website op in lagen, zodat een browser kan 'terugvallen' naar een werkende versie als een CSS- of JS-techniek niet wordt ondersteund: 
@@ -27,7 +27,7 @@ Bouw een website op in lagen, zodat een browser kan 'terugvallen' naar een werke
 3) Voeg daarna _extra enhancements_ toe met CSS en client-side JS, om de User Experience te verbeteren (de leukste stap!)
 -->
 1) Bouw de functionaliteit robuust, met de simpelste techniek​ (HTML en Server-Side Rendering)​
-2) Voeg basic CSS voor de huisstijl toe​
+2) Voeg Baseline CSS voor de huisstijl toe​
 3) Enhance de functionaliteit _geleidelijk_ voor een betere User Experience​ (De leukste stap. Moderne CSS en client-side JS.)​
 
 
