@@ -65,11 +65,11 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 
 ### Aanpak (per component)
 
-1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component _eigenlijk_ is. Gebruik de demo video om een idee te krijgen, maar laat je niet afleiden door hoe het er uit ziet. Schets het component en de interactie.
-2. Onderzoek welke HTML je nodig hebt om dit component _robuust_ neer te zetten, maak hiervan een breakdownschets, en codeer je HTML met minimale CSS voor de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
-3. Voeg eventueel geleidelijk meer CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices.
+1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component _eigenlijk_ is. Maak een breakdownschets van de interactie, en bedenk met welke _robuuste HTML_ dit kan. Gebruik de demo video om een idee te krijgen, maar laat je niet afleiden door hoe het er uit ziet.
+2. Onderzoek welke Baseline CSS je nodig hebt om dit component neer te zetten, en codeer je HTML met minimale CSS voor de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
+3. Voeg eventueel geleidelijk meer moderne CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices; het is bij deze stap prima als niet elke browser dit precies hetzelfde doet.
 
-### Strategiën en voorbeelden voor verschillende enhancements (TODO: Lijst nog uitwerken en verduidelijken)
+### Strategiën en voorbeelden voor verschillende enhancements
 
 - Met @supports (background-clip: text)
 - Door de cascade goed te gebruiken
