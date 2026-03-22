@@ -28,7 +28,7 @@ Bouw een website op in lagen, zodat een browser kan 'terugvallen' naar een werke
 -->
 1) Bouw de functionaliteit robuust, met de simpelste techniek​ (HTML en Server-Side Rendering)​
 2) Voeg Baseline CSS voor de huisstijl toe​
-3) Enhance de functionaliteit _geleidelijk_ voor een betere User Experience​ (De leukste stap. Moderne CSS en client-side JS.)​
+3) Enhance de functionaliteit _geleidelijk_ voor een betere User Experience​ (De leukste stap. Met moderne CSS en client-side JS.)​
 
 
 ## Aanpak
