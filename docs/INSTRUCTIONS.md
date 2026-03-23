@@ -1,11 +1,8 @@
-
-
 # Progressive Enhancement
 
 Een oefening in het ontwerpen en bouwen van UI components volgens het principe van Progressive Enhancement
 
 In het college _S09W2-01-Progressive-Enhancement_ wordt behandeld wat Progressive Enhancement is, en wordt deze deeltaak uitgelegd.
-
 
 
 ## Doel van deze opdracht
@@ -69,11 +66,11 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 2. Onderzoek welke Baseline CSS je nodig hebt om dit component te stylen in de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
 3. Voeg eventueel geleidelijk meer moderne CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices; het is bij deze stap prima als niet elke browser dit precies hetzelfde doet.
 
-### Strategiën en voorbeelden voor verschillende enhancements
+## Strategiën en voorbeelden voor verschillende enhancements
 
 Stap 3, de _enhancements_, doe je niet op slechts één manier. Je kunt hiervoor verschillende code strategieën gebruiken. Hieronder staan een aantal van deze manieren, met een voorbeeld. Per component heb je waarschijnlijk (een combinatie van) een aantal manieren nodig.
 
-#### De Cascade
+### De Cascade
 
 Browsers negeren CSS values die ze niet kennen. Maak hier slim gebruik van als je bijvoorbeeld nieuwere features wilt gebruiken.
 
@@ -86,7 +83,7 @@ body {
 
 Tip: sommige browsers en apparaten kunnen überhaupt geen kleur laten zien (denk aan e-readers), dus hou ook hier rekening mee.
 
-#### Feature detection in CSS: `@supports`
+### Feature detection in CSS: `@supports`
 
 Test of een browser een bepaalde feature ondersteunt, voordat je ook _gerelateerde_ properties verandert. In dit voorbeeld maak je bijvoorbeeld _alleen_ de kleur transparant als de browser _ook_ `background-clip` ondersteunt.
 
@@ -102,7 +99,7 @@ h1 {
 }
 ```
 
-#### Media Queries in CSS: `@media`
+### Media Queries in CSS: `@media`
 
 Met media queries maak je een layout complexer, met bijvoorbeeld meerdere kolommen of animaties:
 
@@ -125,7 +122,7 @@ body {
 }
 ```
 
-#### Feature detection in JS
+### Feature detection in JS
 
 In JavaScript kun je controleren of een bepaalde feature ondersteund wordt, voordat je deze gebruikt. Browsers die deze feature niet ondersteunen, zorgen dan niet voor een error. In dit voorbeeld wordt `document.startViewTransition` alleen gebruikt als het ook echt ondersteund wordt.
 
@@ -139,7 +136,7 @@ if (document.startViewTransition) {
 }
 ```
 
-#### Verberg UI waar je JavaScript voor nodig hebt, en toon deze met JavaScript
+### Verberg UI waar je JavaScript voor nodig hebt, en toon deze met JavaScript
 
 Als je client-side JavaScript voor functionaliteit gebruikt, en je hebt daar bepaalde UI elementen voor nodig, verberg deze dan eerst. Met JavaScript kun je ze tonen. Mocht er iets mis gaan (en dat gebeurt vaker dan je denkt of hoopt), dan heeft je bezoeker in ieder geval geen knoppen die niks doen.
 
@@ -158,7 +155,7 @@ btn.hidden = false
 
 Tip: combineer _JS feature detection_ met dit patroon.
 
-#### Gebruik binnen HTML zelf Progressive Enhancement
+### Gebruik binnen HTML zelf Progressive Enhancement
 
 Veel features in HTML zelf zijn al _progressively enhanced_. Eén van de oudste voorbeelden hiervan is de volgende. In browsers die het `video` element niet ondersteunen, krijg je gewoon een link naar de download, zodat je de video buiten de browser kunt bekijken. Browsers die `video` wel ondersteunen, spelen die af, en laten de link niet zien.
 
@@ -180,12 +177,12 @@ Een ander voorbeeld gaat over _Responsive Images_, waar we in Sprint 10 meer van
 ```
 
 <!--
-#### Polyfills
+### Polyfills
 
 Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills_ genoemd.
 -->
 
-### Bronnen
+## Bronnen
 
 - [Can I Use](https://caniuse.com/)
 - [Baseline (compatibility) @ MDN](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility)
