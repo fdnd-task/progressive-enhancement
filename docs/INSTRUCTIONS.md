@@ -40,9 +40,9 @@ Fork deze leertaak en ga aan de slag met de [files die klaar staan](https://fdnd
 Voor elk component staat een HTML-file klaar met een demo video van het eindresultaat. 
 In de HTML van elk component staan wat hints en content die je nodig hebt.
 
-### UI componenten
+Maak in Sprint 9, 10 en 11 alle user interface componenten. Eke woensdag gaan we een UI component bespreken.
 
-Maak in Sprint 9, 10 en 11 alle user interface componenten. Eke woensdag gaan we een UI component bespreken: 
+### UI componenten
 
 - [Veelgestelde vragen](https://fdnd-task.github.io/progressive-enhancement/faq.html)
 - [Switch control](https://fdnd-task.github.io/progressive-enhancement/switch.html)
