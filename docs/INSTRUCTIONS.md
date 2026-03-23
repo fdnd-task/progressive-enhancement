@@ -183,7 +183,8 @@ Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills
 ```html
 <details>
   <summary>Meer details</summary>
-  <p>Door slim gebruik te maken van HTML en Progressive Enhancement, maak je _robuuste websites_, die het voor meer mensen doen.</p>
+  <p>Door slim gebruik te maken van HTML en Progressive Enhancement,
+     maak je _robuuste websites_, die het voor meer mensen doen.</p>
 </details>
 ```
 
