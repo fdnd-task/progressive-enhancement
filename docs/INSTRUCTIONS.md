@@ -63,8 +63,8 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 ### Aanpak (per component)
 
 1. Maak een _issue_ met als titel het UI component. Beschrijf in de _description_ in eigen woorden wat dit component _eigenlijk_ is. Maak een breakdownschets van de interactie, en bedenk met welke _robuuste HTML_ dit kan. Gebruik de demo video om een idee te krijgen, maar laat je niet afleiden door hoe het er uit ziet.
-2. Onderzoek welke Baseline CSS je nodig hebt om dit component te stylen in de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages.
-3. Voeg eventueel geleidelijk meer moderne CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices; het is bij deze stap prima als niet elke browser dit precies hetzelfde doet.
+2. Onderzoek met [CanIUse.com](https://caniuse.com/) welke Baseline CSS je nodig hebt om dit component te stylen in de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages. (Je hebt hiervoor NodeJS, Express en Render niet nodig.)
+3. Voeg eventueel geleidelijk meer moderne CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices; het is bij deze stap prima als niet elke browser dit precies hetzelfde doet. Het zijn namelijk _enhancements_, die niet per se vereist zijn.
 
 ## Strategiën en voorbeelden voor verschillende enhancements
 
@@ -176,11 +176,29 @@ Een ander voorbeeld gaat over _Responsive Images_, waar we in Sprint 10 meer van
 </picture>
 ```
 
-<!--
 ### Polyfills
 
-Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills_ genoemd.
--->
+Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills_ genoemd. Het `<details>` element is bijvoorbeeld “Baseline 2024, Newly available”. Je kunt dit element dus prima gebruiken (onbekende HTML wordt genegeerd en de inhoud wordt gewoon getoond), maar misschien is het handig om er een kleine _polyfill_ bij te maken. In dit voorbeeld combineer je _feature detection_ met het driestappenplan dat je al kent:
+
+```html
+<details>
+  <summary>Meer details</summary>
+  <p>Door slim gebruik te maken van HTML en Progressive Enhancement, maak je _robuuste websites_, die het voor meer mensen doen.</p>
+</details>
+```
+
+```js
+if (!('open' in document.createElement('details'))) {
+  var summary = document.querySelector('summary')
+  var p = document.querySelector('p')
+  summary.addEventListener('click', function() {
+    p.hidden = !p.hidden
+  })
+  p.hidden = true
+}
+```
+
+Browsers die het `<details>` element kennen, negeren dit stukje JavaScript. En over een paar jaar, als de ondersteuning nog wat beter is, kun je het helemaal weggooien.
 
 ## Bronnen
 
