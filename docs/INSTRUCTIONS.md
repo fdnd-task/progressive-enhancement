@@ -66,7 +66,7 @@ Ieder teamlid werkt minimaal 2 componenten uit.
 2. Onderzoek met [CanIUse.com](https://caniuse.com/) welke Baseline CSS je nodig hebt om dit component te stylen in de huisstijl. Gebruik de hints en de content in de code die klaarstaat, en de bronnen hieronder. Koppel je commits aan je issue. Test deze simpele versie op verschillende browsers en devices, via GitHub Pages. (Je hebt hiervoor NodeJS, Express en Render niet nodig.)
 3. Voeg eventueel geleidelijk meer moderne CSS & JS _enhancements_ toe, aan de hand van de bronnen en coding strategieën hieronder. Test deze “enhanced” versie(s) op verschillende browsers en devices; het is bij deze stap prima als niet elke browser dit precies hetzelfde doet. Het zijn namelijk _enhancements_, die niet per se vereist zijn.
 
-## Strategiën en voorbeelden voor verschillende enhancements
+## Strategieën en voorbeelden voor verschillende enhancements
 
 Stap 3, de _enhancements_, doe je niet op slechts één manier. Je kunt hiervoor verschillende code strategieën gebruiken. Hieronder staan een aantal van deze manieren, met een voorbeeld. Per component heb je waarschijnlijk (een combinatie van) een aantal manieren nodig.
 
