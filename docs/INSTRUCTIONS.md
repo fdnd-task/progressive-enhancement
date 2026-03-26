@@ -217,7 +217,7 @@ Een ander voorbeeld gaat over popovers:
 
 Browsers die het `popover` attribuut niet kennen, zullen alle HTML binnen die `nav` laten zien. De navigatie is dan dus bereikbaar voor iedereen.
 
-Je kunt dan zelfs nog een stapje verdergaan en die eerste knop verbergen:
+Je kunt dan zelfs nog een stapje verdergaan en die eerste knop verbergen, aangezien die dan toch niks doet:
 
 ```css
 @supports not selector(:popover-open) {
