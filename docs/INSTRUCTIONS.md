@@ -136,6 +136,37 @@ if (document.startViewTransition) {
 }
 ```
 
+### Verrijk UI met JavaScript
+
+Gebruik bijvoorbeeld client-side JavaScript om een prima werkend formulier in HTML nét iets prettiger te maken. Zorg dat je eerst HTML maakt die altijd werkt, dus met een submit button:
+
+```html
+<form method="GET" action="/filteren">
+  <label>
+    <input type="checkbox" name="show-all">
+    Toon alles
+  </label>
+  <button type="submit">Filter</button>
+</form>
+```
+
+En leg daar een laag JavaScript overheen met het driestappenplan, die de submit button verbergt:
+
+```javascript
+let form = document.querySelector('form')
+let checkbox = document.querySelector('input[type="checkbox"]')
+let button = document.querySelector('button[type="submit"]')
+
+checkbox.addEventListener('click', function() {
+  form.submit()
+})
+
+button.hidden = true
+```
+
+Mocht er iets mis gaan, of niet ondersteund worden in JavaScript, dan valt je UI terug naar eentje mét submit button.
+
+
 ### Verberg UI waar je JavaScript voor nodig hebt, en toon deze met JavaScript
 
 Als je client-side JavaScript voor functionaliteit gebruikt, en je hebt daar bepaalde UI elementen voor nodig, verberg deze dan eerst. Met JavaScript kun je ze tonen. Mocht er iets mis gaan (en dat gebeurt vaker dan je denkt of hoopt), dan heeft je bezoeker in ieder geval geen knoppen die niks doen.
