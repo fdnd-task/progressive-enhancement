@@ -161,15 +161,16 @@ checkbox.addEventListener('click', function() {
   form.submit()
 })
 
+// Verberg de knop met JavaScript, want die is nu niet meer nodig
 button.hidden = true
 ```
 
 Mocht er iets mis gaan, of niet ondersteund worden in JavaScript, dan valt je UI terug naar eentje mét submit button.
 
 
-### Verberg UI waar je JavaScript voor nodig hebt, en toon deze met JavaScript
+### Verberg UI die JavaScript vereist
 
-Als je client-side JavaScript voor functionaliteit gebruikt, en je hebt daar bepaalde UI elementen voor nodig, verberg deze dan eerst. Met JavaScript kun je ze tonen. Mocht er iets mis gaan (en dat gebeurt vaker dan je denkt of hoopt), dan heeft je bezoeker in ieder geval geen knoppen die niks doen.
+Als je client-side JavaScript voor functionaliteit gebruikt, en je hebt daar bepaalde UI elementen voor nodig, verberg deze dan eerst in je HTML. Met JavaScript kun je ze tonen. Mocht er iets mis gaan (en dat gebeurt vaker dan je denkt of hoopt), dan heeft je bezoeker in ieder geval geen knoppen die niks doen.
 
 ```html
 <button id="knop" hidden>Toon volgende foto</button>
@@ -180,11 +181,12 @@ let btn = document.getElementById('knop')
 btn.addEventListener('click', function() {
   // Hier komt complexere code
 });
+
 // Toon de knop met JavaScript
 btn.hidden = false
 ```
 
-Tip: combineer _JS feature detection_ met dit patroon.
+Tip: combineer _JS feature detection_ met deze patronen
 
 ### Gebruik binnen HTML zelf Progressive Enhancement
 
