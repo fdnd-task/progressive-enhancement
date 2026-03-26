@@ -150,13 +150,14 @@ Gebruik client-side JavaScript om een prima werkend formulier in HTML nét iets 
 </form>
 ```
 
-En leg daar een beetje JavaScript overheen met het driestappenplan, die de submit button verbergt:
+En leg daar een beetje JavaScript overheen met het driestappenplan:
 
 ```javascript
 let form = document.querySelector('form')
 let checkbox = document.querySelector('input[type="checkbox"]')
 let button = document.querySelector('button[type="submit"]')
 
+// Laat de checkbox het formulier submitten
 checkbox.addEventListener('click', function() {
   form.submit()
 })
