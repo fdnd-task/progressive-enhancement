@@ -136,7 +136,7 @@ if (document.startViewTransition) {
 }
 ```
 
-### Verrijk UI met JavaScript
+### Verrijk UI met JS
 
 Gebruik client-side JavaScript om een prima werkend formulier in HTML nét iets prettiger te maken. Je wilt bijvoorbeeld een filter maken waarbij de checkbox het formulier submit. Zorg dan dat je eerst HTML maakt die altijd werkt, dus met een submit button:
 
@@ -169,7 +169,7 @@ button.hidden = true
 Mocht er iets mis gaan, of niet ondersteund worden in JavaScript, dan valt je UI terug naar eentje mét submit button.
 
 
-### Verberg UI die JavaScript vereist
+### Verberg UI die JS vereist
 
 Als je client-side JavaScript voor functionaliteit gebruikt, en je hebt daar bepaalde UI elementen voor nodig, verberg deze dan eerst in je HTML. Met JavaScript kun je ze tonen. Mocht er iets mis gaan (en dat gebeurt vaker dan je denkt of hoopt), dan heeft je bezoeker in ieder geval geen knoppen die niks doen.
 
