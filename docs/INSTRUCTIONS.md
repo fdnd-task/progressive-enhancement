@@ -138,7 +138,7 @@ if (document.startViewTransition) {
 
 ### Verrijk UI met JavaScript
 
-Gebruik bijvoorbeeld client-side JavaScript om een prima werkend formulier in HTML nét iets prettiger te maken. Zorg dat je eerst HTML maakt die altijd werkt, dus met een submit button:
+Gebruik client-side JavaScript om een prima werkend formulier in HTML nét iets prettiger te maken. Je wilt bijvoorbeeld een filter maken waarbij de checkbox het formulier submit. Zorg dan dat je eerst HTML maakt die altijd werkt, dus met een submit button:
 
 ```html
 <form method="GET" action="/filteren">
@@ -150,7 +150,7 @@ Gebruik bijvoorbeeld client-side JavaScript om een prima werkend formulier in HT
 </form>
 ```
 
-En leg daar een laag JavaScript overheen met het driestappenplan, die de submit button verbergt:
+En leg daar een beetje JavaScript overheen met het driestappenplan, die de submit button verbergt:
 
 ```javascript
 let form = document.querySelector('form')
