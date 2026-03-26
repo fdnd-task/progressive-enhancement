@@ -191,7 +191,7 @@ Tip: combineer _JS feature detection_ met deze patronen
 
 ### Gebruik binnen HTML zelf Progressive Enhancement
 
-Veel features in HTML zelf zijn al _progressively enhanced_. Eén van de oudste voorbeelden hiervan is de volgende. In browsers die het `video` element niet ondersteunen, krijg je gewoon een link naar de download, zodat je de video buiten de browser kunt bekijken. Browsers die `video` wel ondersteunen, spelen die af, en laten de link niet zien.
+Veel features in HTML zelf zijn al _progressively enhanced_. Eén van de oudste voorbeelden hiervan is de volgende. In browsers die het `video` element niet ondersteunen, krijg je een link naar de download, zodat je de video buiten de browser kunt bekijken. Browsers die `video` wel ondersteunen, spelen die af, en laten de link niet zien.
 
 ```html
 <video src="video.mp4">
@@ -201,7 +201,44 @@ Veel features in HTML zelf zijn al _progressively enhanced_. Eén van de oudste 
 
 Browsers negeren dus HTML elementen die ze niet kennen.
 
-Een ander voorbeeld gaat over _Responsive Images_, waar we in Sprint 10 meer van gaan vertellen. Browsers die `picture` _en_ AVIF ondersteunen, zullen `foto.avif` downloaden. Browsers die _of_ `picture` _of_ AVIF niet kennen, zullen die delen negeren en gewoon `foto.jpg` downloaden.
+Een ander voorbeeld gaat over popovers:
+
+```html
+<button popovertarget="navigatie">Toon menu</button>
+
+<!-- Hier een hele hoop andere HTML -->
+
+<nav id="navigatie" popover>
+  <a href="/">Home</a>
+  <a href="/over">Over</a>
+  <a href="/contact">Contact</a>
+</nav>
+```
+
+Browsers die het `popover` attribuut niet kennen, zullen alle HTML binnen die `nav` laten zien. De navigatie is dan dus bereikbaar voor iedereen.
+
+Je kunt dan zelfs nog een stapje verdergaan en die eerste knop verbergen:
+
+```css
+@supports not selector(:popover-open) {
+  button {
+    display: none;
+  }
+}
+```
+
+Of het helemaal omdraaien. Hiermee werkt dit ook in nóg oudere browsers, die `@supports` zelf niet ondersteunen:
+
+```css
+button {
+  display: none;
+  @supports selector(:popover-open) {
+    display: block;
+  }
+}
+```
+
+Nog een voorbeeld gaat over _Responsive Images_, waar we in Sprint 10 meer van gaan vertellen. Browsers die `picture` _en_ AVIF ondersteunen, zullen `foto.avif` downloaden. Browsers die _of_ `picture` _of_ AVIF niet kennen, zullen die delen negeren en `foto.jpg` downloaden.
 
 ```html
 <picture>
@@ -212,7 +249,7 @@ Een ander voorbeeld gaat over _Responsive Images_, waar we in Sprint 10 meer van
 
 ### Polyfills
 
-Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills_ genoemd. Het `<details>` element is bijvoorbeeld “Baseline 2024, Newly available”. Je kunt dit element dus prima gebruiken (onbekende HTML wordt genegeerd en de inhoud wordt gewoon getoond), maar misschien is het handig om er een kleine _polyfill_ bij te maken. In dit voorbeeld combineer je _feature detection_ met het driestappenplan dat je al kent:
+Veel features zijn (tijdelijk) met JavaScript na te maken. Dit worden _polyfills_ genoemd. Het `<details>` element is bijvoorbeeld “Baseline 2024, Newly available”. Je kunt dit element dus prima gebruiken (onbekende HTML wordt genegeerd en de inhoud wordt getoond), maar misschien is het handig om er een kleine _polyfill_ bij te maken. In dit voorbeeld combineer je _feature detection_ met het driestappenplan dat je al kent:
 
 ```html
 <details>
