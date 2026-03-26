@@ -155,7 +155,7 @@ En leg daar een beetje JavaScript overheen met het driestappenplan:
 ```javascript
 let form = document.querySelector('form')
 let checkbox = document.querySelector('input[type="checkbox"]')
-let button = document.querySelector('button[type="submit"]')
+let button = document.querySelector('button')
 
 // Laat de checkbox het formulier submitten
 checkbox.addEventListener('click', function() {
